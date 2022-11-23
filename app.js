@@ -80,7 +80,6 @@ app.post("/todos", async (request, response) => {
     return response.status(422).json(err1);
   }
 });
-//PUT https://mytodoapp.com/todos/123/markAscomplete
 
 app.put("/todos/:id", async (request, response) => {
   console.log("Marking a todo as completed : ", request.params.id);

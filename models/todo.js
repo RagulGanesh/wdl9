@@ -14,9 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     static addaTodo({ title, dueDate }) {
       return this.create({ title: title, dueDate: dueDate, completed: false });
     }
-    static markAsCompleted() {
-      return this.update({ completed: true });
-    }
+    // static markAsCompleted() {
+    //   return this.update({ completed: true });
+    // }
     static getAllTodos() {
       return this.findAll({ order: [["id", "ASC"]] });
     }
